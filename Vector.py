@@ -14,8 +14,7 @@ class Vector:
               raise ValueError()
           return func(self, other)
       return wrapper
-  
-  
+    
   @check_length
   def add(self, other):
       return Vector(map(op.add, self, other))
